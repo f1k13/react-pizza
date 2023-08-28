@@ -1,0 +1,148 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 11px;
+  margin-top: 50px;
+}
+.catalogPizza {
+  display: flex;
+  justify-content: flex-start;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 459px;
+  margin: 40px 20px;
+}
+.img {
+  width: 260px;
+  height: 260px;
+}
+.title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+  width: 400px;
+}
+.under {
+  width: 90%;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: #efefef;
+}
+.types {
+  display: flex;
+  justify-content: space-between;
+}
+.type {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.typeNone {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.size {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.sizeNone {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.block {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+.button {
+  border: 2px solid #fe5f1e;
+  color: #fe5f1e;
+  background-color: white;
+  outline: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    background-color: #fe5f1e;
+    color: white;
+    transition: all 0.2s;
+    width: 200px;
+  }
+}
+.count {
+  width: 25px;
+  height: 25px;
+  background-color: #fe5f1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .catalog {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .catalog {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 420px) {
+  .catalog {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

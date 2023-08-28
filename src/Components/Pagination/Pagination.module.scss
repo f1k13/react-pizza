@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  li {
+    display: inline-block;
+    &:global {
+      &.selected {
+        a {
+          background-color: #fe5f1e;
+          color: #ffffff;
+        }
+      }
+    }
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 42px;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #fe5f1e;
+      color: #fe5f1e;
+      list-style-type: none;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fe5f1e;
+        color: #ffffff;
+      }
+    }
+  }
+}

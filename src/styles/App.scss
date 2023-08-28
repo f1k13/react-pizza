@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(255, 223, 140);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  margin: 50px auto;
+  max-width: 1400px;
+  width: calc(100vw - 100px);
+  padding: 30px;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+}

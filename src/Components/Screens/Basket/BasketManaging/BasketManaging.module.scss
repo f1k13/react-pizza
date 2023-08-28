@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.text {
+  display: flex;
+  align-items: center;
+}
+.basketClear{
+  display: flex;
+  align-items: center;
+  
+}
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  padding-left: 10px;
+  
+  
+}
+.subTitle {
+  color: #b6b6b6;
+  padding-left: 10px;
+  &:hover{
+    color: #787878;
+  }
+  cursor: pointer;
+}
